@@ -97,7 +97,7 @@ return (
         />
       </svg>
     </span>
-    Learn8
+    MarcView Sol.
   </h6>
   <p>
     Not so easy task , for now to make it responsive so i am trying.
@@ -210,7 +210,7 @@ return (
   <div className="bg-black/5 p-6 text-center">
     <span>© {new Date().getFullYear()} Copyright:</span>
     <Link className="font-semibold" href="https://tw-elements.com/"
-      >Learn8</Link>
+      >MarcView Sol.</Link>
   </div>
 
 </div>
