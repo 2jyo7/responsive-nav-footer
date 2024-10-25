@@ -21,7 +21,8 @@ const PortFolio: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
 
   // Your Unsplash API Access Key
-  const accessKey = 'Kv40XI0ZyN9oe4768msmL0m-FUkFcmq5ZNLHx5dIx90'; // Best practice to use environment variables for API keys
+   // Best practice to use environment variables for API keys
+  const accessKey = process.env.NEXT_PUBLIC_UNSPLASH_ACCESS_KEY;
 
   
 
@@ -31,7 +32,7 @@ const PortFolio: React.FC = () => {
         const response = await axios.get('https://api.unsplash.com/photos', {
           params: {
             client_id: accessKey,
-            per_page: 12, // Adjust the number of images you want
+            per_page: 30, // Adjust the number of images you want
           },
         });
         setPhotos(response.data);
